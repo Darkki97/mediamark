@@ -16,7 +16,7 @@ public class main {
            
            // 4- Trabajo con las consultas
            
-           ResultSet rs=s.executeQuery("SELECT * FROM productos");
+           ResultSet rs=s.executeQuery("SELECT Id,Nombre,Precio FROM productos");
            while(rs.next()){
                System.out.println(rs.getInt("Id")+" "
                        +rs.getString("Nombre")+ " "
